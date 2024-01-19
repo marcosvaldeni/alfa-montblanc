@@ -1,0 +1,14 @@
+{
+  "name": "node-starter",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "fastify": "^4.25.2"
+  }
+}
