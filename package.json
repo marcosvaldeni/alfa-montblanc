@@ -1,14 +1,18 @@
 {
   "name": "alfa-montblanc",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node --loader tsx --no-warnings ./node_modules/.bin/knex",
-    "lint": "eslint src -e .ts"
+    "lint": "eslint src --ext .ts --fix",
+    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts"
   },
+  "keywords": [],
+  "author": "Marcos Valdeni Lucas",
+  "license": "MIT",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
-    "@types/node": "^20.11.5",
     "eslint": "^8.56.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
